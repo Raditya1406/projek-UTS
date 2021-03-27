@@ -1,0 +1,23 @@
+package com.tutorial;
+
+public class data extends siswa{
+     int umur;
+     int berat;
+     int tinggi;
+
+    data(String nama,int NIS, int umur,int berat,int tinggi ){
+            super(nama, NIS);
+            this.umur=umur;
+            this.berat=berat;
+            this.tinggi=tinggi;
+        }
+
+    void display(){
+        System.out.println("Nama siswa  :  "+this.nama);
+        System.out.println("NIS         : "+this.NIS);
+        System.out.println("Umur        : "+this.umur);
+        System.out.println("berat       : "+this.berat);
+        System.out.println("Tinggi      : "+this.tinggi);
+    }
+
+}
