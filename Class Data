@@ -1,0 +1,14 @@
+package com.tutorial;
+
+public class siswa {
+
+    String nama;
+    int NIS;
+
+
+    siswa(String nama, int NIS) {
+        this.nama = nama;
+        this.NIS = NIS;
+    }
+
+}
