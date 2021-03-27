@@ -1,0 +1,37 @@
+package com.tutorial;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        int absen;
+        data siswa1 = new data("Rizky", 14022, 12, 35, 126);
+        data siswa2 = new data("Sati", 14023, 11, 24, 123);
+        data siswa3 = new data("Fadil", 14023, 9, 14, 108);
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("===================================");
+        System.out.println("||   Program mencari data siswa  ||");
+        System.out.println("===================================");
+        System.out.println("Masukkan absen Siswa : ");
+        absen = input.nextInt();
+        System.out.println("===========================");
+        System.out.println("||   Data Siswa kelas V  ||");
+        System.out.println("===========================");
+        if (absen == 1) {
+            System.out.println("absen yang dipilih adalah 1 ");
+            siswa1.display();
+        } else if (absen == 2) {
+            System.out.println("absen yang dipilih adalah 2 ");
+            siswa2.display();
+        } else if (absen == 3) {
+            System.out.println("absen yang dipilih adalah 3 ");
+            siswa3.display();
+        } else {
+            System.out.println("absen salah, ulangi program ");
+
+        }
+    }
+}
